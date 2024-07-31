@@ -1,39 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Management with 3D Experience - README</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            max-width: 800px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 4px;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 4px;
-            overflow-x: auto;
-        }
-        ul {
-            list-style-type: square;
-        }
-        ul li ul {
-            list-style-type: circle;
-            margin-left: 20px;
-        }
-    </style>
 </head>
 <body>
     <h1>Customer Management with 3D Experience</h1>
@@ -69,8 +36,8 @@
     <h3>Installation</h3>
     <ol>
         <li><strong>Clone the repository:</strong>
-            <pre><code>git clone https://github.com/yourusername/your-repo.git
-cd your-repo</code></pre>
+            <pre><code>git clone https://github.com/vishwajitingole/Pixel6-Studios.git
+cd Pixel6-Studios</code></pre>
         </li>
         <li><strong>Install dependencies:</strong>
             <pre><code>npm install</code></pre>
