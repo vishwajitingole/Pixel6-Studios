@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addCustomer, editCustomer, deleteCustomer } from './store/customerReducer';
 import Form from './Components/Form';
 import List from './Components/List';
+import Experience from './Experience';
+import { Canvas } from '@react-three/fiber';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -31,7 +33,7 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 bg-gray-300">
+    <div className="relative flex flex-col items-center min-h-screen p-4 bg-gray-300">
       <h1 className="mb-6 text-3xl font-bold text-red-600">Customer Management</h1>
       <Form
         addCustomer={handleAddCustomer}
@@ -45,6 +47,11 @@ const App = () => {
         deleteCustomer={(index) => dispatch(deleteCustomer(index))}
         handleSaveCustomer={handleSaveCustomer}
       />
+      <div className="absolute top-[10vh] fixed left-4 z-10 w-[25vw] h-[60vh] three z-[-10]">
+       <Canvas>
+        <Experience/>
+        </Canvas>
+      </div>
     </div>
   );
 };
