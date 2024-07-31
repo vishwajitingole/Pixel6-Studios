@@ -47,19 +47,19 @@ import {
         {/**These ambient and directional light will only work on Mesh Standard Material */}
         <ambientLight intensity={0.5} />
   
-        <directionalLight
+        {/* <directionalLight
           ref={dlight}
           castShadow
           position={[1, 2, 6]}
           intensity={1.3}
-        />
+        /> */}
   
         {/* <mesh receiveShadow rotation={[-Math.PI * 0.5, 0, 0]}>
           <planeGeometry args={[10, 10]} />
           <meshStandardMaterial color={"yellowgreen"} />
         </mesh> */}
   
-        <group ref={shapes} position={[0, 1, 1]}>
+        <group ref={shapes} position={[2, 0, 1]}>
           <mesh castShadow>
             <sphereGeometry />
             <meshStandardMaterial color={"red"} />
