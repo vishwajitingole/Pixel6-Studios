@@ -94,6 +94,6 @@ function Experience() {
     <h2>License</h2>
     <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
     <h2>Contact</h2>
-    <p>If you have any questions or feedback, feel free to contact me at <a href="mailto:yourname@example.com">yourname@example.com</a>.</p>
+    <p>If you have any questions or feedback, feel free to contact me at <a href="mailto:vishwajitingole22@gmail.com">vishwajitingole22@gmail.com</a>.</p>
 </body>
 </html>
