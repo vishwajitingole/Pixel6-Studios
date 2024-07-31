@@ -4,6 +4,7 @@ import {
     RandomizedLight,
     Sky,
     SoftShadows,
+    Text3D,
     useHelper,
   } from "@react-three/drei";
   import { useFrame } from "@react-three/fiber";
@@ -17,9 +18,9 @@ import {
   
     useHelper(dlight, DirectionalLightHelper, 2);
   
-    // const { skyposition } = useControls("sunposition", {
-    //   skyposition: { value: [1, 2, 3] },
-    // });
+    const { skyposition } = useControls("3d controller", {
+      skyposition: { value: [1, 2, 3] },
+    });
   
     useFrame(() => {
       shapes.current.rotation.y += 0.02;
@@ -30,11 +31,10 @@ import {
       <group>
         <OrbitControls />
         <SoftShadows />
-        {/* <Sky sunPosition={skyposition} /> */}
-        <Environment background files={"../public/golf.hdr"} />
+        <Sky sunPosition={skyposition} inclination={10} />
+        {/* <Environment background files={"/public/golf.hdr"} /> */}
   
-        
-  
+       
         {/**In Environment's color div whatever we pass in args it will be setup whole background color with that way */}
         {/* <Environment background>
           <color args={["#000000"]} attach="background" />
@@ -47,12 +47,12 @@ import {
         {/**These ambient and directional light will only work on Mesh Standard Material */}
         <ambientLight intensity={0.5} />
   
-        {/* <directionalLight
+        <directionalLight
           ref={dlight}
           castShadow
           position={[1, 2, 6]}
-          intensity={1.3}
-        /> */}
+          intensity={2}
+        />
   
         {/* <mesh receiveShadow rotation={[-Math.PI * 0.5, 0, 0]}>
           <planeGeometry args={[10, 10]} />

@@ -47,9 +47,9 @@ const List = ({ customers, editCustomer, deleteCustomer, handleSaveCustomer }) =
 
   return (
     <div className="max-w-4xl mx-auto mt-8">
-      <h2 className="mb-4 text-2xl font-bold text-center text-white animate-bounce">Customer List</h2>
+      <h2 className="mb-4 text-2xl font-bold text-center text-black animate-bounce">Customer List</h2>
       {customers.length == 0 ? (
-        <p className="text-lg font-semibold text-center text-white">No customers added yet.</p>
+        <p className="text-lg font-semibold text-center text-black">No customers added yet.</p>
       ) : (
         <ul className="space-y-4">
           {customers.map((customer, index) => (

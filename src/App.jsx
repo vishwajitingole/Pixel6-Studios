@@ -37,7 +37,7 @@ const App = () => {
   return (
     <div className="relative flex flex-col items-center min-h-screen ">
       <div className="z-10">
-      <h1 className="mb-6 text-3xl font-bold text-gray-200">Customer Management</h1>
+      <h1 className="mb-6 text-3xl font-bold text-black">Customer Management</h1>
       </div>
       <div className="z-10">
         <motion.div animate={{
